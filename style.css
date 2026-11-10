@@ -1,0 +1,770 @@
+body{
+    margin: 0;
+    background-color: rgb(216, 208, 199);
+    background-attachment: fixed;
+
+    background-image: 
+    repeating-linear-gradient(
+    to right, 
+    rgba(0,0,0,0.08) 0px, 
+    rgba(0,0,0, 0.08) 1px,
+    transparent 1px,
+    transparent 60px
+    ),
+     
+    repeating-linear-gradient(
+    to bottom, 
+    rgba(0,0,0,0.08) 0px, 
+    rgba(0,0,0, 0.08) 1px,
+    transparent 1px,
+    transparent 60px
+    )
+}
+
+.section-heading{
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+    gap: 16px;
+    margin: 25px auto;
+    margin-bottom: 50px;
+}
+.section-number{
+    font-family: 'Courier New', Courier, monospace;
+    color: #264708;
+}
+.section-h2{
+    font-size: 24px;
+    font-weight: 700;
+    margin: 0;
+    font-family:'Courier New', Courier, monospace;
+    
+}
+.section-line{
+    flex-grow: 2;
+    height: 1px;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+/*-----------------------------Nav and name------------------------*/
+.nav{
+    display: flex;
+
+    justify-content: center;
+  
+    
+    background-color:rgb(204, 196, 187);
+    padding: 20px 40px;
+   
+    gap: 10px;
+   font-family: 'Courier New', Courier, monospace;
+  
+    
+}
+.name{
+    
+    display: flex;
+   margin: 0 30px;
+  flex-wrap: nowrap;
+  white-space: nowrap;
+    
+    font-weight: 500;
+    font-size: 20px;
+   
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+    
+}
+.name span{
+    
+    font-weight: 500;
+    
+}
+
+.nav-buttons {
+    display: flex;
+   
+    gap: 35px;
+    color: rgb(104, 67, 67);
+    margin-left: 150px;
+    cursor: pointer;
+  
+   
+    
+}
+.nav-buttons a{
+    display: flex;
+   text-decoration: none;
+   color: #413535;
+    cursor: pointer;
+  
+   
+    
+}
+
+    
+.nav-buttons a:hover{
+   color: #ffffff;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+/*-----------------------------first part------------------------*/
+
+.introduction{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.first-part{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+    margin-bottom: 200px;
+  
+   
+    
+}
+
+
+.img-container img{
+    border: solid 1px black;
+   
+     object-fit: cover;
+     margin-left: 0px;
+   
+    
+    
+}
+.img-container img:hover{
+    transform: scale(1.02);
+     transition: 0.5s ease;
+    
+    
+}
+/*-introduction-*/
+.introduction{
+    margin-left:80px ;
+    display: flex;
+    flex-direction: column;
+}
+
+.introduction .dale{
+    align-self: flex-start ;
+    font-size: 50px;
+    font-weight: 1;
+    width: fit-content;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+     
+}
+.introduction .intro{
+    font-size: 20px;
+    margin-top: 30px ;
+    font-family:monospace ;
+    letter-spacing: 0.5px;
+    font-weight: 500;
+    
+
+    line-height: 1.5;
+    
+}
+
+/*-----------------------------PROJECTS------------------------*/
+.experience-description-container{
+    border: 1px solid;
+    max-width: 1200px;
+    margin: 20px auto;
+    margin-bottom: 100px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.experience-description{
+    border: 1px solid;
+    padding: 10px;
+    margin: 20px 30px;
+
+}
+.experience-description2{
+     border: 1px solid;
+    padding: 10px;
+    margin: 20px 30px;
+
+}
+.experience-description3{
+     border: 1px solid;
+    padding: 10px;
+    margin: 20px 30px;
+
+}
+
+
+
+
+.experience-images{
+    display: grid;
+    grid-template-columns: repeat(2, 400px);
+    max-width: 700px;
+    margin: 20px auto;
+    column-gap: 2px;
+    row-gap: 20px;
+    
+}
+
+.experience-images img{
+
+    height: 330px;
+    width: 280px;
+    object-fit: cover;
+    display: block;
+    
+
+    
+    border: 1px solid black;
+}
+.single-image-container{
+    display: flex;
+    align-items: center;
+   
+    justify-content: center;
+
+    box-shadow: 0 6px 14px rgba(0,0,0, .85);
+    width: fit-content;
+    padding: 14px 14px  70px 14px;
+    border: 1px solid black;
+    
+
+}
+.single-image-container:nth-child(1){
+    transform: rotate(20deg);
+    transition: 0.5s ease;
+}
+.single-image-container:nth-child(2){
+    transform: rotate(-14deg);
+    transition: 0.5s ease;
+}
+.single-image-container:nth-child(3){
+    transform: rotate(4deg);
+    transition: 0.5s ease;
+}
+.single-image-container:nth-child(4){
+    transform: rotate(7deg);
+    transition: 0.5s ease;
+}
+
+.single-image-container:hover{
+    transform: rotate(0);
+    transition: 0.5s ease;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*-----------------------------PROJECTS------------------------*/
+.projects-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 10px;
+    
+   
+    
+     gap: 24px ;
+     max-width: 900px;
+      margin: 0px auto; 
+      margin-bottom: 300px;
+}
+.projects-content{
+    background-color: #ffffff;
+    border: 1px solid rgba(0,0,0, 0.1);
+    display: flex;
+
+    flex-direction: column;
+    transition: 0.5s ease;
+     background-color: rgb(189, 185, 185);
+
+     padding: 10px;
+}
+.projects-content:hover{
+    transform: scale(1.02);
+    border-color: black;
+}
+
+.projects-content h2{
+    margin-top: 2px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.tech-stack{
+    display: flex;
+    align-self: flex-end;
+    margin-right: 7px;
+    margin-bottom: 7px;
+     gap: 4px;
+
+    
+   
+    
+}
+.tech-stack span{
+    border: 1px solid green;
+    padding: 2px;
+    font-size: 12px;
+    font-family: 'Courier New', Courier, monospace;
+   
+    
+}
+.tech-stack span:hover{
+   background-color: orange;
+}
+
+
+
+/*-----------------------------EDUCATION------------------------*/
+
+
+
+
+.education-container{
+    display: flex;
+    border: 1px solid black;
+
+  
+    align-items: center;
+    max-width: 1200px;
+    margin: 25px auto;
+    padding: 20px;
+    margin-bottom: 150px;
+    
+    
+}
+.education-heading{
+    font-family: 'Courier New', Courier, monospace;
+    border: 2px solid  black;
+    padding: 7px;
+}
+.education-block-container{
+    display: flex;
+    flex-direction: row;
+    gap: 4px;
+    flex-wrap: wrap;
+    
+}
+.education-block{
+    display: flex;
+    border: 1px solid;
+    padding: 5px;
+    flex-wrap: wrap;
+  
+    width: fit-content;
+}
+.education-contents{
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+.shs-container{
+    border: 2px solid black;
+    margin-bottom: 2px;
+    padding: 8px;
+}
+
+
+/*-----------------------------Skills------------------------*/
+
+.skills-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   max-width: 1200px;
+    margin: 25px auto;
+    padding: 5px;
+    margin-bottom: 150px;
+    
+     
+}
+.skills-block{
+    font-family: 'Courier New', Courier, monospace;
+    border: 1px solid rgb(255, 81, 0);
+    height: fit-content;
+    width: fit-content;
+    padding: 8px;
+    font-weight: 500;
+    transition: 0.3s ease;
+
+   
+   
+}
+.skills-block:hover{
+   background-color: #665d5d ;
+   cursor:default;
+   transform: translatey(-5px);
+}
+.technical-container{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    
+
+   
+
+}
+.tools-container{
+     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+
+
+}
+.multimedia-container{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+
+}
+.skills-container h2{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+    
+   
+}
+
+
+
+/*-----------------------------Contact------------------------*/
+
+
+.contact-container{
+    position: relative;
+    display: flex;
+    
+   align-items: center;
+    border: solid 4px rgb(236, 236, 238); ;
+
+
+    background-color: rgb(37, 37, 49);
+    height: 400px;
+    width: 900px;
+    margin: 110px auto;
+    margin-bottom: 200px;
+    transition: 2.8 ease;
+    
+}
+.contact-container:hover{
+   border: solid 4px rgb(231, 130, 22);
+   
+}
+.contact-heading{
+   
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.contact-heading h2{
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+   margin: 20px 20px 10px 80px ;
+    color: #d6c383;
+   
+
+}
+.contact-heading p{
+    font-family: 'Courier New', Courier, monospace;
+     margin: 10px 20px 20px 80px ;
+     font-size: 15px;
+     font-weight: 200;
+      color: #9daa9e;
+
+   
+
+}
+
+.contact-socials i{
+    font-size: 60px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    color: #ebe2e2;
+    
+}
+.contact-socials i:hover{
+   color: #6d5c5c;
+    cursor: pointer;
+    transform: translateY(-10px)
+    
+}
+
+.contact-socials a {
+    color: inherit;
+    text-decoration: none;
+}
+.info{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+
+    align-items: flex-start;
+   gap: 10px;
+   
+    font-family:'Courier New', Courier, monospace;
+    font-size: 15px;
+    color: rgb(236, 236, 238);
+    padding-left: 30px;
+
+}
+.icons{
+    display: flex;
+    justify-content: center;
+    gap: 22px;
+}
+.contact-socials{
+   display: flex;
+   flex-wrap: wrap;
+  justify-content: center;
+  align-content: flex-start;
+  align-items: flex-start;
+  gap: 15px;
+
+  max-width: 320px;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+.info .label{
+    display: inline-block;
+    min-width: 45px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.info p{
+    margin: 0;
+    display: flex;
+    gap: 7px;
+    border-bottom: 1px solid rgba(236,236,238,0.25);
+    padding-bottom: 2px;
+}
+
+.cv-link{
+   color: wheat;
+   text-decoration: underline;
+   font-family: 'Courier New', Courier, monospace;
+   border: 1px solid;
+   padding: 5px;
+}
+.cv-link:hover{
+    background-color: rgb(201, 172, 142);
+    color: black;
+}
+.menu-toggle{
+    display: none;
+}
+
+@media (max-width: 768px) { 
+
+.nav{
+    flex-direction: column;
+    align-items: center;
+    padding: 15px 10px;
+}
+.name{
+    margin: 0 0 10px 0;
+    font-size: 18px;
+}
+.nav-buttons{
+    margin-left: 0;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/*       */
+
+
+.first-part{
+    flex-direction: column;
+    margin-top: 40px;
+    margin-bottom: 100px;
+    padding: 0 20px;
+}
+
+.img-container img{
+    width: 100%;
+    max-width: 280px;
+}
+.introduction{
+    margin-left: 0;
+    margin-top: 30px;
+}
+.introduction .intro{
+    font-size: 16px;
+}
+.introduction .intro br{
+    display: none;
+}
+.introduction .dale{
+    font-size: 36px;
+}
+.section-heading{
+    padding:  0 20px;
+}
+.projects-container{
+
+    grid-template-columns: 2fr;
+    max-width: 20%;
+    padding: 0 20px;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+/*---------------------EXPERIENCE---------------------*/
+.experience-container{
+    padding: 20px;
+}
+.experience-description-container{
+    margin: 20px;
+    margin-bottom: 60px;
+
+}
+.experience-description,
+.experience-description2,
+.experience-description3{
+    margin: 10px 5px;
+}
+.experience-images{
+  
+    grid-template-columns: 1fr;
+    justify-items: center;
+    row-gap: 40px;
+}
+
+.experience-images img{
+    width: 220px;
+    height: 260px;
+}
+
+
+.education-container{
+    padding: 40px;
+    border: none;
+}
+
+.contact-socials{
+    padding: 20px;
+}
+/*---------------------EXPERIENCE---------------------*/
+.skills-container{
+    padding: 0 20px;
+    margin-bottom: 100px;
+    max-width: 100%;
+}
+.skills-container h2{
+    font-size: 20px;                
+}
+.technical-container,
+.tools-container,
+.multimedia-container{               
+    flex-wrap: wrap;                
+    gap: 10px;                      
+}
+.skills-block{
+    padding: 6px;                   
+    font-size: 14px;                 
+}
+/*---------------------EXPERIENCE---------------------*/
+.contact-container{
+    flex-direction: column;
+    height: auto;
+    width: auto;
+
+    margin: 60px 20px;
+    padding: 30px 20px;
+
+}
+.contact-heading h2,
+.contact-heading p{
+    margin: 10px 0;
+}
+.contact-heading p br{
+    display: none;                   /* hide the <br> so the text wraps naturally */
+}
+.contact-socials{
+    margin-top: 20px;                /* space between the text and the icons */
+}
+.contact-socials i{
+    font-size: 40px;                 /* smaller icons (desktop is 60px) */
+}
+
+.info{
+    padding-left: 0;                 /* remove the 30px left padding so the email has room */
+}
+.contact-heading{
+
+}
+
+.menu-toggle{
+    display: block;
+}
+.nav{
+    flex-direction: row;             /* name and button side by side on one line */
+    flex-wrap: wrap;                 /* lets the links drop to their own line below */
+    justify-content: space-between;  /* name on the left, button on the right */
+    align-items: center;             /* line them up vertically */
+    padding: 15px 20px;
+
+
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+.name{
+    margin: 0;
+    font-size: 18px;
+}
+.menu-toggle{
+    display: block;
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: #413535;  
+    cursor: pointer;
+}
+.nav-buttons{
+    display: none;                   /* links are hidden until the menu is opened */
+    flex-basis: 100%;                /* take up a full line, so the links sit below the name */
+    flex-direction: column;          /* one link per line */
+    align-items: center;             /* center the links */
+    gap: 15px;
+    margin-left: 0;                  /* remove the desktop 150px push */
+    padding-top: 15px;               /* space between the name row and the links */
+}
+.nav-buttons.open{
+    display: flex;                   /* when the "open" class is added, the links show */
+}
+}
