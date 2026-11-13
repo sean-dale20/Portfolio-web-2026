@@ -586,6 +586,12 @@ body{
 .menu-toggle{
     display: none;
 }
+.project-link,
+.project-link:visited {         
+  text-decoration: none;        
+  color: inherit;                
+  display: block;               
+}
 
 @media (max-width: 768px) { 
 
