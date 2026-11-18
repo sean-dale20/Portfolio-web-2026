@@ -1,0 +1,221 @@
+/*-----------------------------BACKGROUND------------------------*/
+body{
+    margin: 0;
+    background-color: rgb(216, 208, 199);          /* same beige as the home page */
+    background-attachment: fixed;                  /* grid stays still when scrolling */
+
+    background-image:
+    repeating-linear-gradient(                     /* vertical grid lines */
+    to right,
+    rgba(0,0,0,0.08) 0px,
+    rgba(0,0,0, 0.08) 1px,
+    transparent 1px,
+    transparent 60px
+    ),
+
+    repeating-linear-gradient(                     /* horizontal grid lines */
+    to bottom,
+    rgba(0,0,0,0.08) 0px,
+    rgba(0,0,0, 0.08) 1px,
+    transparent 1px,
+    transparent 60px
+    )
+}
+
+/*-----------------------------SECTION HEADING------------------------*/
+.section-heading{
+    display: flex;
+    align-items: center;
+    max-width: 800px;                              /* same width as the demo content */
+    gap: 16px;
+    margin: 25px auto;
+    margin-bottom: 40px;
+    padding: 0 20px;
+}
+.section-number{
+    font-family: 'Courier New', Courier, monospace;
+    color: #264708;                                /* green number, like the home page */
+}
+.section-h2{
+    font-size: 24px;
+    font-weight: 700;
+    margin: 0;
+    font-family:'Courier New', Courier, monospace;
+}
+.section-line{
+    flex-grow: 2;                                  /* line fills the leftover space */
+    height: 1px;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+/*-----------------------------NAV------------------------*/
+.nav{
+    display: flex;
+    justify-content: center;
+    background-color:rgb(204, 196, 187);
+    padding: 20px 40px;
+    gap: 10px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.name{
+    display: flex;
+    margin: 0 30px;
+    flex-wrap: nowrap;
+    white-space: nowrap;                           /* keeps your name on one line */
+    font-weight: 500;
+    font-size: 20px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.name span{
+    font-weight: 500;
+}
+.nav-buttons {
+    display: flex;
+    gap: 35px;
+    margin-left: 150px;
+    cursor: pointer;
+}
+.nav-buttons a{
+    display: flex;
+    text-decoration: none;
+    color: #413535;
+    cursor: pointer;
+}
+.nav-buttons a:hover{
+    color: #ffffff;
+}
+.menu-toggle{
+    display: none;                                 /* hamburger hidden on desktop */
+}
+
+/*-----------------------------DEMO PAGE------------------------*/
+.demo-back{
+    max-width: 800px;
+    margin: 30px auto 0 auto;                     /* centers it, with space at the top */
+    padding: 0 20px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.demo-back a{
+    color: #413535;                               /* same color as your nav links */
+    text-decoration: none;
+}
+.demo-back a:hover{
+    color: #ffffff;                               /* same hover as your nav */
+}
+
+.demo-container{
+    max-width: 800px;
+    margin: 0 auto 100px auto;                    /* centered, with space at the bottom */
+    padding: 0 20px;
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    flex-direction: column;                       /* stack the boxes top to bottom */
+    gap: 24px;                                    /* space between each box */
+}
+
+.demo-account{
+    background-color: rgb(37, 37, 49);            /* dark box, same as your contact section */
+    color: rgb(236, 236, 238);
+    padding: 20px;
+    border: 4px solid rgb(236, 236, 238);
+}
+.demo-account h3{
+    color: #d6c383;                               /* gold heading, matches the contact heading */
+    margin-top: 0;
+}
+.demo-account .label{
+    display: inline-block;
+    min-width: 90px;                              /* lines up the email and password values */
+    color: #9daa9e;                               /* soft green, like your contact text */
+}
+
+.demo-steps{
+    border: 1px solid black;                      /* outlined box, like your education section */
+    padding: 20px;
+}
+.demo-steps h3{
+    margin-top: 0;
+}
+.demo-steps li{
+    margin-bottom: 8px;                           /* space between each step */
+}
+
+.demo-button{
+    align-self: flex-start;                       /* button only as wide as its text */
+    padding: 10px 18px;
+    border: 1px solid black;
+    color: #413535;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+.demo-button:hover{
+    background-color: rgb(201, 172, 142);         /* same hover color as your CV button */
+    color: black;
+}
+
+/*-----------------------------MOBILE------------------------*/
+@media (max-width: 768px) {
+
+/* nav + hamburger */
+.nav{
+    flex-direction: row;             /* name and button side by side on one line */
+    flex-wrap: wrap;                 /* lets the links drop to their own line below */
+    justify-content: space-between;  /* name on the left, button on the right */
+    align-items: center;             /* line them up vertically */
+    padding: 15px 20px;
+    position: sticky;                /* nav stays at the top when scrolling */
+    top: 0;
+    z-index: 100;
+}
+.name{
+    margin: 0;
+    font-size: 18px;
+}
+.menu-toggle{
+    display: block;                  /* show the ☰ button on phones */
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: #413535;
+    cursor: pointer;
+}
+.nav-buttons{
+    display: none;                   /* links are hidden until the menu is opened */
+    flex-basis: 100%;                /* take up a full line, so the links sit below the name */
+    flex-direction: column;          /* one link per line */
+    align-items: center;             /* center the links */
+    gap: 15px;
+    margin-left: 0;                  /* remove the desktop 150px push */
+    padding-top: 15px;               /* space between the name row and the links */
+}
+.nav-buttons.open{
+    display: flex;                   /* when the "open" class is added, the links show */
+}
+
+/* heading */
+.section-h2{
+    font-size: 18px;                 /* long title fits on small screens */
+}
+
+/* demo page */
+.demo-back{
+    margin-top: 20px;                /* less space at the top on phones */
+}
+.demo-container{
+    padding: 0 15px;                 /* a bit less side padding */
+    margin-bottom: 60px;
+}
+.demo-account,
+.demo-steps{
+    padding: 15px;                   /* smaller boxes on phones */
+    font-size: 14px;
+}
+.demo-account p{
+    word-break: break-all;           /* long email wraps instead of going off-screen */
+}
+.demo-button{
+    align-self: stretch;             /* button becomes full width, easier to tap */
+    text-align: center;
+}
+
+}

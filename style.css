@@ -313,6 +313,8 @@ body{
      background-color: rgb(189, 185, 185);
 
      padding: 10px;
+     position: relative;
+     overflow: hidden;
 }
 .projects-content:hover{
     transform: scale(1.02);
@@ -773,4 +775,29 @@ body{
 .nav-buttons.open{
     display: flex;                   /* when the "open" class is added, the links show */
 }
+}
+
+
+.projects-content:hover{
+    transform: scale(1.05);   /* zoom a bit more than before (was 1.02) */
+    border-color: black;      /* keep your black border on hover */
+}
+
+.projects-content:hover::after{
+    opacity: 1;               /* overlay fades in, covering the title and tech stack */
+}
+
+.projects-content::after{
+    content: "Click to redirect to project link";    /* the text that appears */
+    position: absolute;                              /* placed on top of the card */
+    inset: 0;                                        /* stretch to all 4 edges (top/right/bottom/left = 0) */
+    display: flex;                                   /* used for centering the text */
+    align-items: center;                             /* center vertically */
+    justify-content: center;                         /* center horizontally */
+    background-color: rgba(37, 37, 49, 0.92);        /* dark cover, same color as your contact box */
+    color: #d6c383;                                  /* gold text, matches your contact heading */
+    font-family: 'Courier New', Courier, monospace;  /* same font as the rest of your cards */
+    font-size: 16px;
+    opacity: 0;                                      /* invisible until hover */
+    transition: opacity 0.4s ease;                   /* fade in/out smoothly */
 }
