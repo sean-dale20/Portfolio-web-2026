@@ -137,7 +137,8 @@ body{
 
 .img-container img{
     border: solid 1px black;
-   
+   max-width: 350px;
+   max-height: 350px;
      object-fit: cover;
      margin-left: 0px;
    
@@ -174,6 +175,8 @@ body{
     
 
     line-height: 1.5;
+    display: block;
+    max-width: 55ch;
     
 }
 
