@@ -782,25 +782,51 @@ body{
 
 
 .projects-content:hover{
-    transform: scale(1.05);   /* zoom a bit more than before (was 1.02) */
-    border-color: black;      /* keep your black border on hover */
+    transform: scale(1.05);   
+    border-color: black;     
 }
 
 .projects-content:hover::after{
-    opacity: 1;               /* overlay fades in, covering the title and tech stack */
+    opacity: 1;              
 }
 
 .projects-content::after{
-    content: "Click to redirect to project link";    /* the text that appears */
-    position: absolute;                              /* placed on top of the card */
-    inset: 0;                                        /* stretch to all 4 edges (top/right/bottom/left = 0) */
-    display: flex;                                   /* used for centering the text */
-    align-items: center;                             /* center vertically */
-    justify-content: center;                         /* center horizontally */
-    background-color: rgba(37, 37, 49, 0.92);        /* dark cover, same color as your contact box */
-    color: #d6c383;                                  /* gold text, matches your contact heading */
-    font-family: 'Courier New', Courier, monospace;  /* same font as the rest of your cards */
+    content: "Click to redirect to project link";    
+    position: absolute;                              
+    inset: 0;                                       
+    display: flex;                                  
+    align-items: center;                             
+    justify-content: center;                         
+    background-color: rgba(37, 37, 49, 0.92);       
+    color: #d6c383;                                  
+    font-family: 'Courier New', Courier, monospace;  
     font-size: 16px;
-    opacity: 0;                                      /* invisible until hover */
-    transition: opacity 0.4s ease;                   /* fade in/out smoothly */
+    opacity: 0;                                      
+    transition: opacity 0.4s ease;                  
+}
+/* Intro paragraph - match the preview's typewriter look */
+.intro {
+  display: block;                          
+  max-width: 55ch;                         
+  font-family: "Courier New", monospace;   
+  font-size: 1.05rem;                      
+  line-height: 1.8;                        
+  color: #2b2b2b;                         
+}
+
+.introduction .intro {
+  display: block;                          /* lets width, border and padding work on the span */
+  max-width: 52ch;                         
+  font-family: "Courier New", monospace;   
+  font-size: 1.05rem;                     
+  line-height: 1.8;                        
+  color: #2b2b2b;                          
+  border-left: 3px solid #2b2b2b;         
+  padding: 4px 0 4px 16px;                 
+  margin-top: 30px;                       
+}
+
+.introduction .intro .tech {
+  background: linear-gradient(transparent 55%, #e9c98f 55%); /* colors only the bottom half, like a marker */
+  padding: 0 2px;                          /* a little room on each side */
 }
